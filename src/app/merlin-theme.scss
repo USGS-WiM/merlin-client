@@ -1,0 +1,15 @@
+@import "~@angular/material/theming";
+@include mat-core();
+
+// $merlin-app-primary: mat-palette($mat-green, 900, 800, 700);
+// $merlin-app-accent:  mat-palette($mat-green, 700, 200, 500);
+// $merlin-app-warn:    mat-palette($mat-red);
+
+$merlin-app-primary: mat-palette($mat-indigo, A700, A400, A200);
+$merlin-app-accent:  mat-palette($mat-indigo, A700, A400, A200);
+$merlin-app-warn:    mat-palette($mat-red);
+
+
+$merlin-app-theme: mat-light-theme($merlin-app-primary, $merlin-app-accent, $merlin-app-warn);
+
+@include angular-material-theme($merlin-app-theme);
