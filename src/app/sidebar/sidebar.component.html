@@ -1,15 +1,44 @@
 <mat-sidenav-container class="sidebar-container">
   <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
-               (closed)="events.push('close!')">
-    Sidenav content
+    (closed)="events.push('close!')">
+    <div class="title">Table</div>
+    <mat-nav-list>
+      <mat-list-item routerLink="1" routerLinkActive="active">
+        <mat-icon mat-list-icon>person</mat-icon>
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">About</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item routerLink="2" routerLinkActive="active">
+        <mat-icon mat-list-icon>settings</mat-icon>
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Services</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item routerLink="3" routerLinkActive="active">
+        <mat-icon mat-list-icon>local_phone</mat-icon>
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Contact</h5>
+        </div>
+      </mat-list-item>
+
+
+
+    </mat-nav-list>
   </mat-sidenav>
 
-  <mat-sidenav-content>
-    <p><mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox></p>
-    <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
+  <!-- <mat-sidenav-content>
+    <p>
+      <mat-slide-toggle checked (click)="sidenav.toggle()">Toggle Sidebar</mat-slide-toggle>
+    </p>
     <p>Events:</p>
     <div class="example-events">
       <div *ngFor="let e of events">{{e}}</div>
     </div>
-  </mat-sidenav-content>
+  </mat-sidenav-content> -->
 </mat-sidenav-container>

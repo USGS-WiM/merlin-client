@@ -45,6 +45,8 @@ import {
   MatBottomSheetModule,
   MatStepperModule
 } from '@angular/material';
+import { AuthenticationService } from './services/authentication.service';
+import { SidebarService } from './services/sidebar.service';
 
 @NgModule({
   declarations: [
@@ -95,7 +97,10 @@ import {
     MatStepperModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    AuthenticationService,
+    SidebarService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

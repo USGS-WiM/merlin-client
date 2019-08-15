@@ -1,0 +1,17 @@
+#outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: white;
+    box-sizing: border-box; // Left sidebar
+    min-height: 100vh;
+    min-height: calc(100vh - 80px);
+}
+
+#sidebar {
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+}
