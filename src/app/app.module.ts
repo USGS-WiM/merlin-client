@@ -9,6 +9,9 @@ import { AuthenticationComponent } from './authentication/authentication.compone
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DataViewComponent } from './data-view/data-view.component';
 import { AboutComponent } from './about/about.component';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import {
   MatAutocompleteModule,
@@ -45,6 +48,26 @@ import {
   MatBottomSheetModule,
   MatStepperModule
 } from '@angular/material';
+
+import { SampleLoginComponent } from './sample-login/sample-login.component';
+import { SamplesSearchComponent } from './samples-search/samples-search.component';
+import { ResultsSearchComponent } from './results-search/results-search.component';
+import { BottlesComponent } from './bottles/bottles.component';
+import { AcidsComponent } from './acids/acids.component';
+import { BrominationsComponent } from './brominations/brominations.component';
+import { BlankWatersComponent } from './blank-waters/blank-waters.component';
+import { CooperatorsComponent } from './cooperators/cooperators.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { SitesComponent } from './sites/sites.component';
+import { ProjectSitesComponent } from './project-sites/project-sites.component';
+import { ReportProjectResultsComponent } from './report-project-results/report-project-results.component';
+import { ReportNawqaResultsComponent } from './report-nawqa-results/report-nawqa-results.component';
+import { ReportNwisSamplesComponent } from './report-nwis-samples/report-nwis-samples.component';
+import { ReportNwisResultsComponent } from './report-nwis-results/report-nwis-results.component';
+import { ReportCooperatorResultsComponent } from './report-cooperator-results/report-cooperator-results.component';
+
+// Services
+import { AcidsService } from './services/acids.service';
 import { AuthenticationService } from './services/authentication.service';
 import { SidebarService } from './services/sidebar.service';
 
@@ -54,7 +77,23 @@ import { SidebarService } from './services/sidebar.service';
     AuthenticationComponent,
     SidebarComponent,
     DataViewComponent,
-    AboutComponent
+    AboutComponent,
+    SampleLoginComponent,
+    SamplesSearchComponent,
+    ResultsSearchComponent,
+    BottlesComponent,
+    AcidsComponent,
+    BrominationsComponent,
+    BlankWatersComponent,
+    CooperatorsComponent,
+    ProjectsComponent,
+    SitesComponent,
+    ProjectSitesComponent,
+    ReportProjectResultsComponent,
+    ReportNawqaResultsComponent,
+    ReportNwisSamplesComponent,
+    ReportNwisResultsComponent,
+    ReportCooperatorResultsComponent
   ],
   imports: [
     BrowserModule,
@@ -95,11 +134,14 @@ import { SidebarService } from './services/sidebar.service';
     MatTooltipModule,
     MatBottomSheetModule,
     MatStepperModule,
-    FormsModule
+    FormsModule,
+    HttpModule,
+    HttpClientModule
   ],
   providers: [
     AuthenticationService,
-    SidebarService
+    SidebarService,
+    AcidsService
   ],
   bootstrap: [AppComponent],
 })

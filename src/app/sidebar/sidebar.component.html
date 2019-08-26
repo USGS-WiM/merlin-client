@@ -1,29 +1,117 @@
 <mat-sidenav-container class="sidebar-container">
   <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
     (closed)="events.push('close!')">
-    <div class="title">Table</div>
+    <div class="title">Navigation</div>
     <mat-nav-list>
-      <mat-list-item routerLink="1" routerLinkActive="active">
-        <mat-icon mat-list-icon>person</mat-icon>
+      <mat-list-item routerLink="/merlin/sample-login" routerLinkActive="active">
         <div fxFlex="10"></div>
         <div class="sidenav-item">
-          <h5 class="lead">About</h5>
+          <h5 class="lead">Sample Login</h5>
         </div>
       </mat-list-item>
 
-      <mat-list-item routerLink="2" routerLinkActive="active">
-        <mat-icon mat-list-icon>settings</mat-icon>
+      <mat-list-item  routerLink="/merlin/samples-search" routerLinkActive="active">
         <div fxFlex="10"></div>
         <div class="sidenav-item">
-          <h5 class="lead">Services</h5>
+          <h5 class="lead">Samples Search</h5>
         </div>
       </mat-list-item>
 
-      <mat-list-item routerLink="3" routerLinkActive="active">
-        <mat-icon mat-list-icon>local_phone</mat-icon>
+      <mat-list-item  routerLink="/merlin/results-search" routerLinkActive="active">
         <div fxFlex="10"></div>
         <div class="sidenav-item">
-          <h5 class="lead">Contact</h5>
+          <h5 class="lead">Results Search</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/merlin/bottles" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Bottles</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item routerLink="/merlin/acids" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Acids</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/merlin/brominations" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Brominations</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/merlin/blank-waters" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Blank Waters</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/merlin/cooperators" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Cooperators</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/merlin/projects" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Projects</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/merlin/sites" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Sites</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/merlin/project-sites" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Project-Sites</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/merlin/report-projects-results" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Report Projects Results Count</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/merlin/report-nawqa-results" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Report NAWQA Results Count</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/merlin/report-nwis-samples" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Report NWIS Samples</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/merlin/report-nwis-results" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Report NWIS Results</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/merlin/report-cooperator-results" routerLinkActive="active">
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Report Cooperator Results</h5>
         </div>
       </mat-list-item>
 
@@ -31,6 +119,10 @@
 
     </mat-nav-list>
   </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
 
   <!-- <mat-sidenav-content>
     <p>
