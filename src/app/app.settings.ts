@@ -59,4 +59,14 @@ export class APPSETTINGS {
     public static get BULKSAMPLEBOTTLES_URL(): string { return this.API_ROOT + 'bulksamplebottles/'; }
     public static get BULKSAMPLEBOTTLEBROMINATIONS_URL(): string { return this.API_ROOT + 'bulksamplebottlebrominations/'; }
     public static get BULKSITES_URL(): string { return this.API_ROOT + 'bulksites/'; }
+
+    /* public static get MIN_AUTH_JSON_HEADERS() {
+        return new Headers({
+            // 'Authorization': 'Basic ' + btoa(sessionStorage.username + ':' + sessionStorage.password),
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        });
+    } */
+
+    public static get JSON_HEADERS() { return new Headers({ 'Accept': 'application/json', 'Content-Type': 'application/json' }); }
 }

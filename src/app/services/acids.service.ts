@@ -14,6 +14,11 @@ export class AcidsService {
   constructor(private _http: Http) { }
 
   public getAllAcids(): Observable<Acids[]> {
+
+    const options = new RequestOptions({
+      headers: APPSETTINGS.JSON_HEADERS
+    });
+
     return this._http.get(APPSETTINGS.ACIDS_URL)
     .map((response: Response) => <Acids[]>response.json())
     .catch(this.handleError);

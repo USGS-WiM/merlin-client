@@ -1,13 +1,24 @@
-<div>
-    <hot-table
-      class="hot"
-      [settings]="settings"
-      [colHeaders]="true"
-      [rowHeaders]="true">
-        <hot-column data="id" [readOnly]="true" title="ID"></hot-column>
-        <hot-column data="code" title="Code"></hot-column>
-        <hot-column data="concentration" title="Concentration"></hot-column>
-        <hot-column data="created_date" title="Created Date"></hot-column>
-        <hot-column data="comment" title="Comment"></hot-column>
-    </hot-table>
-  </div>
+<!-- .__            __   
+|  |__   _____/  |_ 
+|  |  \ /  _ \   __\
+|   Y  (  <_> )  |  
+|___|  /\____/|__|  
+     \/             
+ -->
+<!-- <div>
+  <hot-table 
+  class="hot" 
+  [data]="acidsResults" 
+  licenseKey="non-commercial-and-evaluation"
+  [colHeaders]="true"
+  [rowHeaders]="true">
+    <hot-column data="id" [readOnly]="true" title="ID"></hot-column>
+    <hot-column data="code" title="Code"></hot-column>
+    <hot-column data="concentration" title="Concentration"></hot-column>
+    <hot-column data="created_date" title="Created Date"></hot-column>
+    <hot-column data="comment" title="Comment"></hot-column>
+  </hot-table>
+</div> -->
+<div class="table">
+  <hot-table class="hot" [data]="acidsResults" [settings]="hotSettings"></hot-table>
+</div>
