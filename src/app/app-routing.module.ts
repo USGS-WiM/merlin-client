@@ -30,14 +30,6 @@ const routes: Routes =
     { path: 'merlin/cooperators', component: CooperatorsComponent },
     { path: 'merlin/bottles', component: BottlesComponent },
     { path: 'merlin/project-sites', component: ProjectSitesComponent },
-    { path: 'merlin/projects', component: ProjectsComponent },
-    { path: 'merlin/report-cooperator-results', component: ReportCooperatorResultsComponent },
-    { path: 'merlin/report-nawqa-results', component: ReportNawqaResultsComponent },
-    { path: 'merlin/report-nwis-results', component: ReportNwisResultsComponent },
-    { path: 'merlin/report-nwis-samples', component: ReportNwisSamplesComponent },
-    { path: 'merlin/report-projects-results', component: ReportProjectResultsComponent },
-    { path: 'merlin/samples-search', component: SamplesSearchComponent },
-    { path: 'merlin/results-search', component: ResultsSearchComponent },
     { path: 'merlin/sites', component: SitesComponent }
   ];
 
