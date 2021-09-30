@@ -24,7 +24,7 @@
     "@angular/router": "~7.0.0",
     "@handsontable/angular": "^5.1.0",
     "core-js": "^2.5.4",
-    "handsontable": "^7.1.1",
+    "handsontable": "^10.0.0",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.5.2",
     "zone.js": "~0.8.26"
